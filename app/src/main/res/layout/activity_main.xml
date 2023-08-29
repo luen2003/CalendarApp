@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/myDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Calendar"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="23sp"
+        android:layout_marginLeft="145dp"
+        android:layout_marginTop="48dp"
+        />
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/bg_calendar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="38dp">
+        <CalendarView
+            android:layout_width="wrap_content"
+            android:layout_height="320dp"
+            android:id="@+id/calendarView">
+
+        </CalendarView>
+
+    </LinearLayout>
+    <Button
+        android:background="@drawable/bg_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save My Date"
+        android:textColor="#FFF"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="120dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" />
+</LinearLayout>
